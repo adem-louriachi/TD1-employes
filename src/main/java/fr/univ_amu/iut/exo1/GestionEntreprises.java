@@ -14,8 +14,8 @@ public class GestionEntreprises {
                 12,
                 LocalDate.of(1998, Month.FEBRUARY, 23),
                 LocalDate.of(2019, Month.NOVEMBER, 13),
-                11,
-                140);
+                10,
+                40);
         e1.hire(m1);
         System.out.println(e1.ToString());
     }
