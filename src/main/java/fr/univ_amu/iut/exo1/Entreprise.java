@@ -1,10 +1,11 @@
 package fr.univ_amu.iut.exo1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Entreprise {
     private String name;
-    private List<Employes> employesList;
+    private ArrayList<Employes> employesList = new ArrayList<Employes>();
 
     public Entreprise(String name) {
         this.name = name;
@@ -17,11 +18,11 @@ public class Entreprise {
         return this.name = name;
     }
 
-    public List<Employes> getEmployesList() {
+    public ArrayList<Employes> getEmployesList() {
         return employesList;
     }
 
-    public void setEmployesList(List<Employes> employesList) {
+    public void setEmployesList(ArrayList<Employes> employesList) {
         this.employesList = employesList;
     }
 
