@@ -5,8 +5,7 @@ import java.time.Month;
 
 public class GestionEntreprises {
     public static void main(String[] args) {
-        Entreprise e1 = new Entreprise("FirstEntreprise");
-        System.out.println(e1.ToString());
+        Entreprise e1 = new Entreprise("MaBoiteInfo");
         Employes m1 = new Employes(
                 1,
                 269054,
@@ -17,6 +16,8 @@ public class GestionEntreprises {
                 LocalDate.of(2019, Month.NOVEMBER, 13),
                 11,
                 140);
+        System.out.println(e1);
+        System.out.println(e1.ToString());
         System.out.println(m1.toString());
     }
 }
