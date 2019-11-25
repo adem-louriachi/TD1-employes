@@ -18,5 +18,6 @@ public class GestionEntreprises {
                 40);
         e1.hire(m1);
         System.out.println(e1.ToString());
+
     }
 }

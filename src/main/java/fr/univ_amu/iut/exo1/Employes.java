@@ -1,6 +1,7 @@
 package fr.univ_amu.iut.exo1;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class Employes {
 
@@ -120,5 +121,9 @@ public class Employes {
                 ", Salaire brut ="+ calcGrossSalary()+
                 ", Salaire net ="+ calcNetSalary()+
                 '}';
+    }
+
+    public double calcAnciennete(){
+        return ChronoUnit.DAYS.between(this.hiringDate, LocalDate.now());
     }
 }
